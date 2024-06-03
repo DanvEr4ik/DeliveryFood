@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_stack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/simpleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textSize="24sp"
+        android:textColor="@color/StartGreen"
+        android:textStyle="bold"
+        android:fontFamily="@font/yeonsung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_stack" />
+
+    <LinearLayout
+
+        android:id="@+id/name_l"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:fontFamily="@font/lato"
+        android:outlineSpotShadowColor="@color/StartGreen"
+        android:paddingLeft="8dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleText" >
+
+        <TextView
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/yeonsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:text="Daniel Vertianov"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@android:color/darker_gray"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/address_l"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:fontFamily="@font/lato"
+        android:outlineSpotShadowColor="@color/StartGreen"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_l" >
+
+        <TextView
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/yeonsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:text="78 Vernadsky Avenue"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:inputType="textMultiLine"
+            android:textSize="22sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@android:color/darker_gray"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/phone_l"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:fontFamily="@font/lato"
+        android:outlineSpotShadowColor="@color/StartGreen"
+        android:paddingLeft="8dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_l" >
+
+        <TextView
+            android:text="Phone"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/yeonsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:text="+79560000000"
+            android:inputType="phone"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@android:color/darker_gray"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/p_method"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="0dp"
+        android:fontFamily="@font/lato"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_l">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeonsung"
+            android:text="Payment Method"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_payment"
+            app:layout_constraintBottom_toBottomOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/total_price"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="0dp"
+        android:fontFamily="@font/lato"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_method">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeonsung"
+            android:text="Total Amount"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/lato"
+            android:text="0"
+            android:textColor="@color/StartGreen"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="$"
+            android:textColor="@color/StartGreen"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/price"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/place_my_order"
+        android:layout_width="match_parent"
+        android:text="Place My Order"
+        android:textSize="24sp"
+        android:textColor="@color/StartGreen"
+        android:textAllCaps="false"
+        android:background="@drawable/edit_text_bg"
+        android:shadowColor="@color/StartGreen"
+        android:outlineAmbientShadowColor="@color/StartGreen"
+        android:outlineSpotShadowColor="@color/StartGreen"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_price" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

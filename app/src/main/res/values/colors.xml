@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray">#4C4B4B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="StartGreen">#53E88B</color>
+    <color name="EndGreen">#15BE77</color>
+    <color name="recyclerViewColor">#f4f4f4</color>
+</resources>
